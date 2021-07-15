@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/*
+    This is an example external CSS file.
+
+    Author: Josh Archer
+    Date: 7/15/2021
+    File name: my_styles.css
+*/
+
+body {
+    /* background-color: teal; */
+    background-color: #85682a;
+    color: rgba(248, 248, 255, 0.8); /* the alpha value is in the range [0, 1] */
+}
+
+h1 {
+    background-color: #005353;
+    padding: 8px;
+    font-family: "Book Antiqua";
+    font-size: 1.8em;
+}
+
+/* paragraph styles */
+p {
+    margin-left: 18px;
+    padding-left: 6px;
+    border-left: 2px solid #015252;
+    font-family: Arial;
+    font-size: 1.2em;
+}
+
+/* This is meant to be overridden in
+   image_styles.css */
+img {
+    width: 800px;
+}
