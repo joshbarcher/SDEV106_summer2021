@@ -1,4 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 body {
     font-family: "Avant Garde",Avantgarde,"Century Gothic",
                  CenturyGothic,AppleGothic,sans-serif;
+    font-size: 1em;
 }
+
+h1 {
+    font-size: 1.25em;
+}
+
+p {
+    font-family: "Libre Baskerville", Garamond, serif;
+    font-size: 0.8em;
+}
+
+aside, blockquote {
+    font-size: 0.6em;
+}
+
+strong {
+    font-weight: normal;
+    color: orange;
+    text-decoration: darkblue underline;
+    font-style: normal;
+}
+
+
+
+
+
+
+
