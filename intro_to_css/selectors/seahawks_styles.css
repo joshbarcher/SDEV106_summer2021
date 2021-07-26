@@ -1,0 +1,77 @@
+/* target all articles AND asides */
+article, aside {
+    border: 3px solid #892a3a;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+    background-color: #f5e1e4;
+}
+
+/* targeting headers that are (immediate) children of articles */
+article > header {
+    padding-left: 20px;
+    background-color: rgba(201, 201, 201, 0.4);
+}
+
+/* targeting descendent elements under an article */
+article p {
+    font-weight: bold;
+}
+
+header > p {
+    color: green;
+}
+
+/* paragraphs which are immediate children of article */
+article > p {
+    color: blue;
+}
+
+/* both of the following selectors will target the
+   paragraph in the aside */
+aside p {
+    font-style: italic;
+}
+
+aside > p {
+    font-style: italic;
+}
+
+/* you can mix and match these types of selectors
+   (more on this later...)
+ */
+header > p, aside > p {
+    background-color: white;
+}
+
+#main-heading {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro",
+                 "DejaVu Sans Condensed", Helvetica, Arial,
+                 "sans-serif";
+}
+
+#standing {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Libre Baskerville", Garamond, serif
+}
+
+.important {
+    text-decoration: underline;
+}
+
+.spotlight {
+    font-size: 1.3em;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.spotlight, .yellow {
+    font-weight: bold;
+}
+
+

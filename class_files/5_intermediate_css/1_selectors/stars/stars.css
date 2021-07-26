@@ -1,0 +1,47 @@
+/* target the h1 that is the first or last child of its parent */
+h1:first-child {
+    background-color: #fff3b2;
+}
+
+h1:last-child {
+    background-color: #99bd83;
+}
+
+/* target the h1 that is the first or last child of its parent,
+   but only considering h1 elements
+ */
+
+h1:first-of-type {
+    background-color: #d19ee7;
+}
+
+h1:last-of-type {
+    background-color: #8ccdf1;
+}
+
+/* target Tom Cruise */
+#male-actors li:first-child {
+    font-weight: bold;
+}
+
+/* target Reese Witherspoon */
+#female-actors li:last-child {
+    color: pink;
+}
+
+/* target the list (<ul>) with male actors */
+ul:first-of-type {
+    background-color: #D9CFC1;
+}
+
+/* target the list (<ul>) with female actors */
+ul:last-child {
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
