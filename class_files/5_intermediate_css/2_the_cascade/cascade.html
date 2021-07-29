@@ -4,8 +4,24 @@
         <meta charset="UTF-8">
         <title>Example of the cascade</title>
         <link rel="stylesheet" href="cascade.css">
+
+        <!-- embedded styles will override external styles
+             (avoid these) -->
+        <style>
+            #main {
+                color: #e56db6;
+            }
+        </style>
     </head>
     <body>
-        <p id="main">Hello world!</p>
+        <article>
+            <h1>My Header</h1>
+            <section>
+                <p id="main" style="color: sandybrown;">Hello world!</p>
+                <p>Another paragraph</p>
+                <p>Another paragraph</p>
+            </section>
+            <p>Another paragraph</p>
+        </article>
     </body>
 </html>

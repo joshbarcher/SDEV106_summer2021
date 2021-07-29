@@ -1,17 +1,18 @@
 html {
-    background-color: #ffe7e8;
+    background-color: #ffe7ef;
 }
 
 body {
-    background-color: #b3e9eb;
+    background-color: #b3ebb4;
     width: 90%;
     margin: 0 auto;
 }
 
 header, footer {
-    background-color: #87bcbe;
+    background-color: #8cbe87;
 }
 
 article p {
-
+    width: 45%;
+    display: inline-block;
 }

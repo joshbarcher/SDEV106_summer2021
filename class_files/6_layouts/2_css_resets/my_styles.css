@@ -1,0 +1,12 @@
+body {
+    background-color: #fff3b2;
+}
+
+p {
+    margin: 8px;
+    line-height: 1em;
+    display: inline-block;
+    width: 40%;
+    border: 2px solid #c06500;
+    padding: 10px;
+}

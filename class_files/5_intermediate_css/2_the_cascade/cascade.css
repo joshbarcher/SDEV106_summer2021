@@ -1,29 +1,34 @@
-/* the order of styles applied are from
-   top to bottom in a stylesheet */
+section {
+    border: 1px solid black;
+    padding: 6px;
+}
+
+/* apply a style to all paragraphs */
 p {
-    color: yellowgreen;
+    color: blue;
+    /*font-family: Consolas, "Andale Mono", "Lucida Console",
+                           "Lucida Sans Typewriter", Monaco,
+                           "Courier New", "monospace";*/
 }
 
-p {
-    color: darkmagenta;
+/* apply a style to just paragraphs in a section */
+section p {
+    color: green;
+    /*font-size: 1.2em;*/
 }
 
-p {
-    color: #d19ee7;
+#main {
+    color: red;
 }
 
-/* the selectors can vary, but the rules
-   remain the same */
 
-/*
-p {
-    color: #0066ee;
-}
 
-body p {
-    color: crimson;
-}
 
-p#main {
-    color: darkgreen;
-}*/
+
+
+
+
+
+
+
+

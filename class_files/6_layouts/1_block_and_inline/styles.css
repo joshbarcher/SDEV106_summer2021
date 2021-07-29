@@ -8,13 +8,35 @@ body {
 }
 
 p {
-    background: rgba(255,84,104,0.3);
+    background-color: rgba(255,84,104,0.3);
     border: 2px solid rgb(255,84,104);
     padding: 10px;
     margin: 10px;
+    display: block;
 }
 
 span {
-    background: white;
+    background-color: white;
     border: 1px solid black;
+    padding: 10px;
+    margin: 8px;
+
+    /* display the element inline, with other elements,
+       but in other ways (spacing...) treat this element
+       like a block element
+     */
+    /*display: inline-block;*/
+
+    /* you can hide elements using none */
+    /*display: none;*/
+
+    /* you can hide an element, but leave the space it would
+       normally occupy
+     */
+    visibility: visible;
 }
+
+
+
+
+

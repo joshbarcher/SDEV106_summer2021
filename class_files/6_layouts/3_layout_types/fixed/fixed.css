@@ -4,8 +4,10 @@ html {
 
 body {
     background-color: #b3e9eb;
+    /* to center the contents of the page, give the <body> tag a fixed width
+       then set the margins to auto-size on the left and right */
     width: 960px;
-    margin: 0 auto;
+    margin: 0 auto; /* top/bottom left/right */
 }
 
 header, footer {
@@ -13,5 +15,7 @@ header, footer {
 }
 
 article p {
-
+    display: inline-block;
+    width: 400px;
+    padding: 20px;
 }
