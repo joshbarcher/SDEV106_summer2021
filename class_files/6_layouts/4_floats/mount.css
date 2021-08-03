@@ -43,6 +43,28 @@ p {
     float: left;
 }
 
+#last-explorers {
+    float: right;
+}
+
+#explorer-div img:first-of-type {
+    width: 300px;
+}
+
+/* the third paragraph in the explorer div */
+#explorer-div p:nth-of-type(3) {
+    /*clear: left;*/
+}
+
+/* the second paragraph in the explorer div */
+#explorer-div p:nth-of-type(2) {
+    /*clear: both;*/
+}
+
+#explorer-div p:last-of-type {
+    clear: both;
+}
+
 #other-visitors {
     float: right;
 }
@@ -54,6 +76,20 @@ p {
 #early-years {
     float: left;
 }
+
+/* apply the clear-fix hack to all div areas */
+div::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+
+
+
+
+
+
 
 
 

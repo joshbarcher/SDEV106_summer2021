@@ -1,0 +1,9 @@
+/* select a dd that is an adjacent sibling of dt */
+dt + dd {
+    color: purple;
+}
+
+/* select any dd that is a sibling of dt */
+dt ~ dd {
+    color: brown;
+}
