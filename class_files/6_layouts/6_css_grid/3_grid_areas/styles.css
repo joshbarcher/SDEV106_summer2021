@@ -27,43 +27,30 @@ article::after {
 article, header, footer, aside {
     border: 2px solid #637c56;
     border-radius: 5px;
-    background-color: 2px solid #99bd83;
+    background-color: #99bd83;
     margin: 10px;
     padding: 10px;
 }
 
 .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /*grid-template-rows: repeat(5, 1fr);*/
 
+    grid-template-areas:
+        "head head jwly jwly jwly"
+        "head head jwly jwly jwly"
+        "clth clth .    .    book"
+        "furn furn .    .    book"
+        "clck foot foot .    asde";
 }
 
-header {
-
-}
-
-article#jewelry {
-
-}
-
-article#clocks {
-
-}
-
-article#clothes {
-
-}
-
-article#furniture {
-
-}
-
-article#books {
-
-}
-
-footer {
-
-}
-
-aside {
-
-}
+/* name the elements in our grid */
+header { grid-area: head; }
+article#jewelry { grid-area: jwly; }
+article#clocks { grid-area: clck; }
+article#clothes { grid-area: clth; }
+article#furniture { grid-area: furn; }
+article#books { grid-area: book; }
+footer { grid-area: foot; }
+aside { grid-area: asde; }
