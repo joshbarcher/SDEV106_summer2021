@@ -1,9 +1,9 @@
 
+/* styles for all devices */
 body {
     background-color: cornsilk;
 }
 
-/* styles for all devices */
 h1 {
     border-top: 2px solid rosybrown;
     border-bottom: 2px solid rosybrown;
@@ -19,62 +19,91 @@ p {
     margin: 30px;
 }
 
-/* styles for mobile devices */
+/* styles for mobile devices (MOBILE FIRST!!!) - width <= 480px */
 @media screen and (max-width: 480px) {
+    body {
+        background-color: #59423d;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        color: bisque;
+        margin: 20px 8px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* LVHA for our links */
+    a:link, a:visited {
+        color: white;
+    }
+
+    a:hover {
+        color: #f36767;
+    }
+
+    a:active {
+        color: gray;
+    }
+}
+
+/* styles for tablets - 480px > width <= 960px */
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    body {
+        background-color: #A77E58;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    p {
+        background-color: bisque;
+        margin: 8px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+}
+
+/* styles for desktops width > 960px */
+@media screen and (min-width: 960px) {
+    body {
+        background-color: #e8bcbc;
+    }
+
     h1 {
         background-color: #8d5152;
         color: bisque;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    p {
-        margin: 5px;
-    }
-}
-
-/* styles for tablets */
-@media screen and (min-width: 480px) {
-    article {
-        display: grid;
-        grid-template-areas:
-            "title title"
-            "p1    p2";
-        grid-gap: 10px;
-    }
-
-    p {
-        border: 1px solid black;
-        border-radius: 5px;
-        background-color: floralwhite;
-        padding: 8px;
-        margin: 0 10px 0 10px;
-    }
-
-    /* grid names */
-    h1 { grid-area: title; }
-    p:nth-of-type(1) { grid-area: p1; }
-    p:nth-of-type(2) { grid-area: p2; }
-}
-
-/* styles for desktops */
-@media screen and (min-width: 960px) {
-    html {
-        margin: 10px;
     }
 
     article {
-        grid-template-areas:
-                "title p1"
-                "p2    p2";
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    h1 {
-        background-color: cornsilk;
-        border: none;
-        text-decoration: underline;
-        margin-left: 30px;
-        margin-top: 30px;
+    p {
+        width: 250px;
+        background-color: #fadfdf;
+        padding: 10px 15px;
+        margin: 12px;
+        border-right: 2px solid darkred;
+        border-bottom: 2px solid darkred;
     }
 }
+
+
+
+
+
+
+
+
+
 
