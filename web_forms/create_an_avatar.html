@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Create a Digital Version of Yourself</title>
+		<link rel="stylesheet" href="form_styles.css">
+	</head>
+	<body>
+		<h1>Create Your Avatar</h1>
+
+		<!-- action is the page to send the data to on the server
+		     method is the HTTP verb (GET/POST) to use when sending data -->
+		<form action="#" method="get">
+			<!-- the name attribute is used to name the form field
+			     when the form data is sent to the server -->
+			<label for="avatar-name">Avatar name</label>
+			<input type="text" id="avatar-name" name="name"
+				   placeholder="Enter a short name...">
+
+			<label for="hair-type">Hair Type</label>
+			<select id="hair-type" name="hair-type">
+				<option>Please choose a hair type...</option>
+				<option>Bald</option>
+				<option>Frizzy</option>
+				<option>Curly</option>
+				<option>Mullet</option>
+				<option>Long</option>
+			</select>
+
+			<!-- create an input field for an avatar biography
+			     use the <textarea> input field
+			-->
+			<label for="bio">Biography</label>
+			<textarea id="bio" name="biography"
+					  placeholder="Enter an avatar biography..."></textarea>
+
+			<!-- an example with radio buttons -->
+			<label>Glasses</label>
+			<div>
+				<section>
+					<input type="radio" class="radio-button" id="glasses-yes"
+					       name="glasses">
+					<label for="glasses-yes">Yes</label>
+				</section>
+				<section>
+					<input type="radio" class="radio-button" id="glasses-no"
+					       name="glasses">
+					<label for="glasses-no">No</label>
+				</section>
+			</div>
+
+			<!-- an example with checkboxes -->
+
+
+			<button type="submit">Submit Form!</button>
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+

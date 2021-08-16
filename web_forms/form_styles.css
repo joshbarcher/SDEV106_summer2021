@@ -1,0 +1,56 @@
+html {
+    background-color: #59423d;
+}
+
+body {
+    background-color: #D9CFC1;
+    width: 760px;
+    margin: auto;
+    padding: 30px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+
+label {
+    text-align: right;
+}
+
+input, select {
+    /*display: block;*/
+    width: 50%;
+}
+
+button {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+textarea {
+    width: 50%;
+    height: 150px;
+}
+
+div label {
+    text-align: left;
+}
+
+input.radio-button {
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
