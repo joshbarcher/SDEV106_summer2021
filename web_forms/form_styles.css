@@ -39,7 +39,7 @@ div label {
     text-align: left;
 }
 
-input.radio-button {
+input.radio-button, input.checkbox {
     width: auto;
 }
 
